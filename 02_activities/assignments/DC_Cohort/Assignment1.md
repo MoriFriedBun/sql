@@ -209,5 +209,12 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+Very interesting article. I was shocked by the information.
+
+We make sense of a continuous world through discrete data and categories, so every representation is inaccurate by design. What matters is whether we notice the biases and limitations in the way we choose to represent the world, and whether we think about the philosophy behind each of those choices. A database encodes someone’s decisions about what counts, and those decisions then become the rules that everyone else has to live by.
+
+One example that has bothered me for a long time is author citation in scientific papers. I am Chinese, with the extremely common last name Zhang. There is a running joke that no matter what brilliant idea you publish, “Zhang et al.” did it first. To thrive in academia, scientists are under implicit pressure to build a personal brand around their area of expertise, and a very common last name makes that much harder. The “last name et al.” convention is unhelpful for many East Asians, such as people named Kim in Korea or Sato in Japan. In our cultures we usually refer to people by their full names, because first names are far more individual than last names. The citation system assumes a naming structure under which surnames identify people, and it serves people with rare last names better than people like me.
+
+Alphabetical ordering of authors is a second example. When all authors contributed equally, as in large LHC collaborations at European Organization for Nuclear Research (CERN), authors are listed alphabetically. The result is another running joke: a legendary figure like George Aad appears to outrank every other author (“Aad et al.”), until someone even more legendary, Morad Aaboud, shows up. This has affected me personally. In my first two papers I was a co-first author with another student, and in both I was listed second because their last name comes earlier in the alphabet. As an undergraduate, it was discouraging to see my first two “babies” without my name in the visible position. A rule that looks fair and neutral still created an unequal outcome.
 ```
+
