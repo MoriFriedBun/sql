@@ -208,6 +208,6 @@ The second limit runs deep into philosophy. We make sense of the world by sortin
 For simple cases we don't have such problem, like sorting cats and dogs (though maybe there are philosophers out there arguing if this is the best categories we should use). But as things grow more nuanced, our confidence slowly dissolves. Using example from my field: where is the boundary between depression and anxiety, or between autism and neurotypicality? Psychiatric diagnoses overlap heavily, co-occur constantly, and contain so much internal variety that two people with the same diagnosis can share very few symptoms. Clinicians trained on the same manual routinely disagree.
 Yet this is the material we hand to neural networks. We take ambiguous, overlapping data and encode each case as belonging to exactly one class. The network then learns to reproduce our boundaries, and often reports them with a confidence we ourselves do not have. Worse, we judge the model against those same labels. A model that found a truer structure in the data would be scored as wrong.
 
-Though these two problems can be argued to be the same problem. Every word is a category, and every category we share is stored in words. When we train machines on our language and our labels, we pass on biases.
+Though these two problems can be argued to be the same problem. Every word is a category, and every category we share is stored in words. When we train machines on our language and our labels, we pass on biases...
 
 ```
