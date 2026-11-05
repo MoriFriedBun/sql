@@ -57,7 +57,12 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+architecture for overwriting (type 1) - 
+customer_address(customer_id, street, city, province, postal_code). There is one row per customer. When a customer moves, the existing row is updated to overwrite the old address.
+
+architecture for retaining change (type 2) - 
+customer_address(address_id, customer_id, street, city, province, postal_code, is_current). Now address_id is the primary key, where there is one row per address per customer. When a customer moves, change is_current = 0, and insert a new row with is_current = 1.
+
 ```
 
 ***
@@ -192,5 +197,17 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+So many random thoughts. At this weird turning point of history.
+
+Humans are limited beings, piloting our "flesh mech suits". Our bodies and brains were assembled by evolution for survival, then furnished by culture and history. Every observation we make is filtered through that suit, and the filtering is what we call bias. We now hope to build neural networks that see past these limits: a silicon-based mech lord that explores what we cannot. But we build those networks out of our own biases, for example, language and categorization.
+
+Language is perhaps the most consequential tool we have ever made, and it carries our biases in its structure. It did not begin as an accurate description of the world. It grew to serve coordination, persuasion and survival, and it accreted along a path-dependent history. Our words carve reality where our ancestors needed to carve it, which is not necessarily where reality has its joints. Large language models are trained on this inheritance: a model trained on human language learns the distribution of human attention. While some people are visualizing a god-like intelligence able to roam the entire space of possible knowledge (like the orange man who wants to rename AI to SI), however, LLM might sadly have been constrained to a smaller "solution space" because of the inherent disconnect between language/logic and the physical reality. Grounding models in other kinds of data, or letting them learn from experiment and feedback, may loosen that constraint. Yet the starting there will be other constraints.
+
+The second limit runs deep into philosophy. We make sense of the world by sorting it into kinds. Much of reality, however, varies continuously, and every category is an artificial boundary we impose on it. Where to set boundary is itself an open philosophical question, one that has been debated since Plato spoke of carving nature at its joints. We have not settled it.
+
+For simple cases we don't have such problem, like sorting cats and dogs (though maybe there are philosophers out there arguing if this is the best categories we should use). But as things grow more nuanced, our confidence slowly dissolves. Using example from my field: where is the boundary between depression and anxiety, or between autism and neurotypicality? Psychiatric diagnoses overlap heavily, co-occur constantly, and contain so much internal variety that two people with the same diagnosis can share very few symptoms. Clinicians trained on the same manual routinely disagree.
+Yet this is the material we hand to neural networks. We take ambiguous, overlapping data and encode each case as belonging to exactly one class. The network then learns to reproduce our boundaries, and often reports them with a confidence we ourselves do not have. Worse, we judge the model against those same labels. A model that found a truer structure in the data would be scored as wrong.
+
+Though these two problems can be argued to be the same problem. Every word is a category, and every category we share is stored in words. When we train machines on our language and our labels, we pass on biases...
+
 ```
